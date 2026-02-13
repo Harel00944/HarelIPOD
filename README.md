@@ -22,7 +22,7 @@ Push Buttoms
 
 
 Design Process & System Validation
-Proof of Concept (POC) Phase
+Proof of Concept (POC) stage:
 
 The project initially started as a Proof of Concept using the MCU board developed during my final electrical engineering  project (MCU Board) .
 <img width="923" height="911" alt="image" src="https://github.com/user-attachments/assets/e01bfb94-5182-45db-a689-c20272f94df7" />
@@ -39,11 +39,13 @@ Audio codec functional testing
 
 GNSS and IMU data acquisition validation
 
-USB-CDC control interface testing
+USB control interface testing
 
-Once the system functionality was verified at the board level, the project transitioned into a full custom PCB design phase.
+TFT Display 
 
-PCB Design Phase
+Once the system functionality was verified at the board level, the project transitioned into a full custom PCB design stage.
+
+PCB Design stage
 
 After successful feasibility validation, a complete PCB design process was initiated.
 
@@ -53,11 +55,7 @@ Proper Power Distribution Network (PDN) architecture
 
 Controlled grounding strategy
 
-Stable clock routing
-
-SPI and SDIO signal integrity considerations
-
-Decoupling capacitor placement optimization
+SPI and SDIO, analog codec signal integrity considerations
 
 Clean return current paths
 
@@ -103,7 +101,7 @@ The system has been successfully powered, validated and tested.
 
 Verified subsystems include:
 
-GNSS receiver operational and providing valid geographic position data
+GNSS receiver operational and providing valid LAT,LONG,ALT position data
 
 IMU delivering stable Yaw, Pitch and Roll orientation data
 
@@ -156,17 +154,8 @@ Special attention was given to high-speed and RF traces:
 
 The USB interface between the USB Type-C connector and the STM32F405 was routed as a 90Ω differential pair, with length matching, tight coupling and continuous GND reference.
 
-The RF trace between the u-blox GNSS module and the external antenna connector was routed as a 50Ω controlled impedance microstrip, referenced to a solid ground plane to preserve signal quality and minimize reflections.
+The RF trace between the u-blox GNSS module and the external antenna connector was routed as a 50Ω controlled impedance trace, referenced to a solid ground plane to preserve signal quality and minimize reflections.
 
-General routing principles included:
-
-Proper PDN structure with a dedicated power layer
-
-Solid uninterrupted GND reference
-
-Correct decoupling placement near each IC
-
-Clean placement strategy to support signal integrity
 
 <img width="1189" height="793" alt="image" src="https://github.com/user-attachments/assets/44a7a26b-583d-498c-9b92-7fbc977cdada" />
 <img width="1193" height="786" alt="image" src="https://github.com/user-attachments/assets/b824f920-dafe-4f04-bd50-41f3e0c5fbb5" />
