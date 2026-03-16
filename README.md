@@ -45,7 +45,9 @@ TFT Display
 
 Once the system functionality was verified at the board level, the project transitioned into a full custom PCB design stage.
 
-PCB Design stage
+PCB Design stage:
+<img width="1101" height="719" alt="image" src="https://github.com/user-attachments/assets/51733182-3726-46b6-979f-4d8dd9930052" />
+
 
 After successful feasibility validation, a complete PCB design process was initiated.
 
